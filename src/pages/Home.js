@@ -1,13 +1,11 @@
 import React, { useEffect } from "react";
-import GameDetail from "../components/GameDetail";
 //Redux
 import { useDispatch, useSelector } from "react-redux";
 import { loadGames } from "../actions/gamesAction";
 //Components
 import Game from "../components/Game";
 import styled from "styled-components";
-import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { motion, LayoutGroup } from "framer-motion";
 import { fadeIn } from "../animations";
 
 const Home = () => {

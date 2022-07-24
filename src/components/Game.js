@@ -1,23 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useDispatch } from "react-redux";
-import { loadDetail } from "../actions/detailAction";
-
 import { popup } from "../animations";
 
 const Game = ({ name, description, image, id, link }) => {
     const stringPathId = id.toString();
-    const dispatch = useDispatch();
     console.log(image);
-    const loadDetailHandler = () => {
-        document.body.style.overflow = "hidden";
-        dispatch(loadDetail(id));
-    }
-
+   
     return (
         <StyledGame layoutId={stringPathId} variants={popup} initial="hidden" animate="show">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
                 <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
                 <p>{description}</p>
                 <motion.img layoutId={`image ${stringPathId}`} src={image} alt={name} />

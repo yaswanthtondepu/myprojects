@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import GlobalStyles from "./components/GlobalStyles";
 import { Route, Routes } from "react-router-dom";
 
