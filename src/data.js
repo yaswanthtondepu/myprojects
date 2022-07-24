@@ -10,7 +10,7 @@ const projects = [
         id: 2,
         name: "Beatful - A Music Player",
         description: "Music Player",
-        link: 'https://city-tours-y-react.netlify.app/',
+        link: 'https://beatful-music.netlify.app/',
         image: '../img/beatful.png',
     },
     {
@@ -24,7 +24,7 @@ const projects = [
         id: 4,
         name: "City Tours",
         description: "Know more about your favourite destinations",
-        link: 'https://ignite-find-games.netlify.app/',
+        link: 'https://city-tours-y-react.netlify.app/',
         image: '../img/city-tours.png',
     }
 
