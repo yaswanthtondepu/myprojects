@@ -22,7 +22,7 @@ const Home = () => {
             <LayoutGroup>
                 {searched.length > 0 ? (
                     <div>
-                        <h2>Searched Games</h2>
+                        <h2></h2>
                         <Games>
                             {searched.map(game => (
                                 <Game
@@ -36,7 +36,7 @@ const Home = () => {
                         </Games>
                     </div>) : ""}
 
-                <h2>Upcoming Games</h2>
+                <h2>Projects</h2>
                 <Games>
                     {upcoming.map(project => (
                         <Game
