@@ -22,7 +22,7 @@ const Home = () => {
             <LayoutGroup>
                 {searched.length > 0 ? (
                     <div>
-                        <h2></h2>
+                        <h2>test</h2>
                         <Games>
                             {searched.map(game => (
                                 <Game
