@@ -69,6 +69,7 @@ const Games = styled(motion.div)`
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap:3rem;
     grid-row-gap: 5rem;
+    padding-bottom: 5rem ;
 `;
 
 export default Home;
