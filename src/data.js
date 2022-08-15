@@ -26,7 +26,14 @@ const projects = [
         description: "Know more about your favourite destinations",
         link: 'https://city-tours-y-react.netlify.app/',
         image: '../img/city-tours.png',
-    }
+    },
+    {
+        id: 5,
+        name: "YourKart",
+        description: "Phone Store",
+        link: 'https://your-kart.netlify.app/',
+        image: '../img/yourKart.png',
+    },
 
 
 ]
