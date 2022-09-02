@@ -34,6 +34,14 @@ const projects = [
         link: 'https://your-kart.netlify.app/',
         image: '../img/yourKart.png',
     },
+    {
+        id: 6,
+        name: "VideoFond",
+        description: "Streaming Platform",
+        link: 'https://videofond.netlify.app/',
+        image: '../img/videofond.png',
+    },
+
 
 
 ]
