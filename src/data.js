@@ -45,7 +45,7 @@ const projects = [
         id:7,
         name: "Typing Speed Test",
         description: "Test your typing speed",
-        link: 'https://tst.netlify.app/',
+        link: 'https://tspeedtest.netlify.app/',
         image: '../img/typing.png',
     }
 
