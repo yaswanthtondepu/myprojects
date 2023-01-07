@@ -6,13 +6,13 @@ import { popup } from "../animations";
 const Game = ({ name, description, image, id, link }) => {
     const stringPathId = id.toString();
     console.log(image);
-   
+
     return (
         <StyledGame layoutId={stringPathId} variants={popup} initial="hidden" animate="show">
             <a href={link} target="_blank" rel="noreferrer">
                 <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
                 <p>{description}</p>
-                <motion.img layoutId={`image ${stringPathId}`} src={image} alt={name} />
+                <motion.img layoutId={`image ${stringPathId}`} style={{ left: "auto !important", position: "inherit !important" }} src={image} alt={name} />
             </a>
         </StyledGame>
     )
