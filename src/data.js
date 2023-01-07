@@ -41,6 +41,13 @@ const projects = [
         link: 'https://videofond.netlify.app/',
         image: '../img/videofond.png',
     },
+    {
+        id:7,
+        name: "Typing Speed Test",
+        description: "Test your typing speed",
+        link: 'https://tst.netlify.app/',
+        image: '../img/typing.png',
+    }
 
 
 
