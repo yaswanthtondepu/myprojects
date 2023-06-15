@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadGames } from "../actions/gamesAction";
 //Components
-import Game from "../components/Game";
+import Project from "../components/Project";
 import styled from "styled-components";
 import { motion, LayoutGroup } from "framer-motion";
 import { fadeIn } from "../animations";
@@ -18,14 +18,14 @@ const Home = () => {
 
     return (
 
-        <GameList variants={fadeIn} initial="hidden" animate="show">
+        <ProjectList variants={fadeIn} initial="hidden" animate="show">
             <LayoutGroup>
                 {searched.length > 0 ? (
                     <div>
                         <h2>test</h2>
-                        <Games>
+                        <Projects>
                             {searched.map(game => (
-                                <Game
+                                <Project
                                     name={game.name}
                                     released={game.released}
                                     id={game.id}
@@ -33,13 +33,13 @@ const Home = () => {
                                     key={game.id}
                                 />
                             ))}
-                        </Games>
+                        </Projects>
                     </div>) : ""}
 
                 <h2>Projects</h2>
-                <Games>
+                <Projects>
                     {upcoming.map(project => (
-                        <Game
+                        <Project
                             name={project.name}
                             description={project.description}
                             id={project.id}
@@ -48,22 +48,22 @@ const Home = () => {
                             key={project.id}
                         />
                     ))}
-                </Games>
+                </Projects>
             </LayoutGroup>
-        </GameList>
+        </ProjectList>
 
 
     );
 };
 
-const GameList = styled(motion.div)`
+const ProjectList = styled(motion.div)`
     padding: 0 5rem ;
     h2{
         padding: 5rem 0 ;
     }
 `;
 
-const Games = styled(motion.div)`
+const Projects = styled(motion.div)`
     min-height: 80vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
