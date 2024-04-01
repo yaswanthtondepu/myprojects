@@ -11,8 +11,8 @@ const projects = [
     {
         id: projectId++,
         name: "Walmart Split",
-        description: "An easy way to add walmart bills to splitwise",
-        link: 'https://walmartsplit.netlify.app/',
+        description: "An easy way to add Walmart bills to splitwise",
+        link: 'https://walmartsplit.vercel.app/',
         image: '../img/walmartsplit.png',
     },
     {
